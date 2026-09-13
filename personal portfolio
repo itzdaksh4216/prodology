@@ -1,0 +1,836 @@
+#index.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+`
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Portfolio
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HOME SECTION -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="welcome">
+                Hello, I'm
+            </p>
+
+            <h1>
+                Nimiksh Jaiswal
+            </h1>
+
+            <h2>
+                Web Developer
+            </h2>
+
+            <p>
+                I create modern, responsive and
+                user-friendly websites.
+            </p>
+
+            <a href="#projects"
+               class="btn">
+                View My Projects
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="images/profile.jpg"
+                 alt="Profile Photo">
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+            <p>
+                I am a passionate computer science student
+                interested in web development and software
+                development. I enjoy creating websites and
+                learning new technologies.
+            </p>
+
+            <p>
+                My goal is to improve my technical skills
+                and build useful and innovative applications.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills" class="section">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Website Structure</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Web Design</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Web Interactivity</p>
+            </div>
+
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Programming</p>
+            </div>
+
+            <div class="skill">
+                <h3>C</h3>
+                <p>Problem Solving</p>
+            </div>
+
+            <div class="skill">
+                <h3>Database</h3>
+                <p>SQL / MongoDB</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+
+    <section id="education" class="section">
+
+        <h2>Education</h2>
+
+        <div class="education-card">
+
+            <h3>Bachelor of Technology</h3>
+
+            <p>
+                Computer Science and Engineering
+            </p>
+
+            <p>
+                Currently pursuing my B.Tech degree.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects" class="section">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>On-Road Vehicle Breakdown Help</h3>
+
+                <p>
+                    A web application that helps users
+                    get assistance during vehicle breakdowns.
+                </p>
+
+                <button onclick="showMessage()">
+                    View Project
+                </button>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>PackVote</h3>
+
+                <p>
+                    An AI-powered group travel planning
+                    application.
+                </p>
+
+                <button onclick="showMessage()">
+                    View Project
+                </button>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Exam Hub</h3>
+
+                <p>
+                    A web platform containing study material
+                    and question banks for students.
+                </p>
+
+                <button onclick="showMessage()">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCOMPLISHMENTS -->
+
+    <section id="achievements" class="section">
+
+        <h2>Accomplishments</h2>
+
+        <div class="achievement-container">
+
+            <div class="achievement">
+                <h3>Web Development</h3>
+                <p>
+                    Developed multiple responsive
+                    web applications.
+                </p>
+            </div>
+
+            <div class="achievement">
+                <h3>Programming</h3>
+                <p>
+                    Practiced C, Java and JavaScript
+                    programming.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="section">
+
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Your Email"
+                   required>
+
+            <textarea id="message"
+                      placeholder="Your Message"
+                      required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Nimiksh Jaiswal. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+@style.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: #24105f;
+
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+
+    list-style: none;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ffff;
+}
+
+
+/* HOME */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 120px 10% 60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #24105f,
+            #1769aa
+        );
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.welcome {
+    font-size: 22px;
+}
+
+.hero h1 {
+    font-size: 60px;
+
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 32px;
+
+    color: #00ffff;
+
+    margin-bottom: 20px;
+}
+
+.hero-text > p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #00ffff;
+
+    color: #24105f;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+
+    background: white;
+}
+
+
+/* PROFILE IMAGE */
+
+.hero-image img {
+    width: 280px;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,0.4);
+}
+
+
+/* GENERAL SECTIONS */
+
+.section {
+    min-height: 70vh;
+
+    padding: 100px 10%;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+    color: #24105f;
+}
+
+
+/* ABOUT */
+
+.about-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+
+/* SKILLS */
+
+.skills-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.skill {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+}
+
+.skill h3 {
+    color: #1769aa;
+
+    margin-bottom: 10px;
+}
+
+
+/* EDUCATION */
+
+.education-card {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+}
+
+.education-card h3 {
+    color: #1769aa;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* PROJECTS */
+
+.projects-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: #24105f;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.project-card button {
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #24105f;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ACHIEVEMENTS */
+
+.achievement-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.achievement {
+    max-width: 350px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+}
+
+.achievement h3 {
+    color: #1769aa;
+
+    margin-bottom: 10px;
+}
+
+
+/* CONTACT */
+
+#contactForm {
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    height: 150px;
+
+    resize: none;
+}
+
+#contactForm button {
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #24105f;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #24105f;
+
+    color: white;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 140px 20px 60px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+
+    .hero-image img {
+        width: 200px;
+
+        height: 200px;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+}
+#srcipt.js
+// Project button
+
+function showMessage() {
+
+    alert("Project details will be available soon!");
+
+}
+
+
+// Contact Form
+
+const contactForm =
+    document.getElementById("contactForm");
+
+
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    alert(
+        "Thank you " +
+        name +
+        "! Your message has been received."
+    );
+
+    contactForm.reset();
+
+});
+</html>
